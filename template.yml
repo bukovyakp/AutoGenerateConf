@@ -1,0 +1,8 @@
+oracledb:
+        image: ${ORACLE_DB_IMAGE}
+        privileged: true
+        cpuset: "0"
+        ports:
+                - "${ORACLE_DB_PORT}:${ORACLE_DB_PORT}"
+        command: /bin/sh -c "chmod 777 /tmp/start; /tmp/start"
+        container_name: ${ORACLE_DB_CONTAINER_NAME}

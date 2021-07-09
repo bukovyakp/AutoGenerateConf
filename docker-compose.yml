@@ -1,0 +1,8 @@
+oracledb:
+        image: image-for-test-2
+        privileged: true
+        cpuset: "0"
+        ports:
+                - "56001:56001"
+        command: /bin/sh -c "chmod 777 /tmp/start; /tmp/start"
+        container_name: ORACLE_LOCALHOST

@@ -1,0 +1,30 @@
+# REQUIRED
+# Your Device Key Identifier can be found at https://dev.facetec.com/#/account
+deviceKeyIdentifier: ${DEVICEKEYIDENTIFIER}
+
+# REQUIRED
+# Your Server Key can be found at https://dev.facetec.com/#/account
+serverKey: ${SERVERKEY}
+
+# REQUIRED
+# Insert the EXACT text from your Production Key file.
+# YAML Note: The below commented out text uses YAML multi-line string folded style.  Please keep the ">" character intact.
+# Example Note: The below commented out key is NOT a working key.
+productionKeyText: |
+  appToken    = ${APPTOKEN}
+  expiryDate  = ${PRODUCTIONKEYEXPIRYDATE}
+  key         = ${PRODUCTIONKEY}
+
+# Your API key for the FaceTec Usage Log server
+httpsApiKey: ${HTTPSAPIKEY}
+
+# Enable if you'd prefer to use SFTP to upload your logs file
+# sftpConfig:
+#  username: ""
+#  privateKey: |
+#    -----BEGIN RSA PRIVATE KEY-----
+#    ...
+#    -----END RSA PRIVATE KEY-----
+
+# The port at which the server will be accessible
+serverPort: 3000 # Defaults to 3000
